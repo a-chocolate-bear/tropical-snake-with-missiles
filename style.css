@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #00CEC9, #00B5B5);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.session-history {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    min-width: 200px;
+}
+
+.session-history h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #FED330;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.session-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.session-history th,
+.session-history td {
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.session-history th {
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    color: #FED330;
+}
+
+.session-history tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#gameCanvas {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+#startButton {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    background: #FED330;
+    border: none;
+    border-radius: 25px;
+    color: #2D3436;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+#startButton:hover {
+    transform: translateY(-2px);
+    background: #F0C419;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 118, 117, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+#gameOver h2 {
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+} 

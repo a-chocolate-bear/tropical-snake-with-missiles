@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Python with Missiles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-container">
+            <div class="score-container">
+                <span>Score: <span id="score">0</span></span>
+                <span>High Score: <span id="highScore">0</span></span>
+            </div>
+            <canvas id="gameCanvas"></canvas>
+            <button id="startButton">Start Game</button>
+            <div id="gameOver" class="hidden">
+                <h2>Game Over!</h2>
+                <p>Press Start to play again</p>
+            </div>
+        </div>
+        <div class="session-history">
+            <h2>Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="sessionScores">
+                    <!-- Session scores will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
